@@ -1,6 +1,6 @@
-package nuqluy.simplequests;
+package io.simplequests;
 
-import nuqluy.simplequests.handlers.NewPlayerJoin;
+import io.simplequests.handlers.NewPlayerJoin;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -16,7 +16,6 @@ public class SimpleQuests extends JavaPlugin {
         saveDefaultConfig();
 
         new NewPlayerJoin(this);
-
     }
 
     @Override

@@ -1,8 +1,7 @@
-package nuqluy.simplequests.handlers;
+package io.simplequests.handlers;
 
-import nuqluy.simplequests.SimpleQuests;
+import io.simplequests.SimpleQuests;
 import org.bukkit.Bukkit;
-import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;
@@ -17,7 +16,7 @@ public class NewPlayerJoin implements Listener {
     public void onJoin(PlayerJoinEvent event) {
         if (!event.getPlayer().hasPlayedBefore()) {
             UUID playerID = event.getPlayer().getUniqueId();
-            SimpleQuests.plugin.getConfig().set("blocksbrokendata." + playerID.toString(), 0);
+            SimpleQuests.plugin.getConfig().set("blocksbrokendata." + playerID, 0);
             SimpleQuests.plugin.saveConfig();
         }
     }
