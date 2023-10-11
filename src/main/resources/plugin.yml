@@ -1,0 +1,4 @@
+name: SimpleQuests
+version: '${project.version}'
+main: nuqluy.simplequests.SimpleQuests
+api-version: '1.20'
