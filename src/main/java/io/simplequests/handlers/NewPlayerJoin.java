@@ -17,6 +17,7 @@ public class NewPlayerJoin implements Listener {
         if (!event.getPlayer().hasPlayedBefore()) {
             UUID playerID = event.getPlayer().getUniqueId();
             SimpleQuests.plugin.getConfig().set("blocksbrokendata." + playerID, 0);
+            SimpleQuests.plugin.getConfig().set("blocksplaceddata." + playerID, 0);
             SimpleQuests.plugin.saveConfig();
         }
     }
