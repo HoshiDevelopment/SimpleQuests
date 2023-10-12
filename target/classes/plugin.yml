@@ -1,0 +1,13 @@
+name: SimpleQuests
+version: '1.0-SNAPSHOT'
+main: io.simplequests.SimpleQuests
+api-version: '1.20'
+description: Simple quests plugin for your survival server!
+
+commands:
+  stats:
+    description: View your personal or other player's statistics!
+    usage: /stats
+    aliases: statistics
+    permission: stats.list
+    permission-message: §cYou do not have permission to do that!
