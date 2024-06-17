@@ -1,5 +1,6 @@
 package io.simplequests;
 
+import io.simplequests.commands.QuestsMenu;
 import io.simplequests.commands.ViewStats;
 import io.simplequests.handlers.BlockHandler;
 import io.simplequests.handlers.NewPlayerJoin;
@@ -20,6 +21,7 @@ public class SimpleQuests extends JavaPlugin {
 
         // import commands
         getCommand("stats").setExecutor(new ViewStats(this));
+        getCommand("quests").setExecutor(new QuestsMenu(this));
 
         //import events/handlers
         new NewPlayerJoin(this);

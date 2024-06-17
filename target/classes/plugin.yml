@@ -9,5 +9,9 @@ commands:
     description: View your personal or other player's statistics!
     usage: /stats
     aliases: statistics
-    permission: stats.list
-    permission-message: §cYou do not have permission to do that!
+
+  quests:
+    description: Opens the quest menu
+    usage: /quests
+    aliases: [ q, quest ]
+    permission: quests.show
